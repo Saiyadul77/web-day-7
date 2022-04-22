@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            width: 5000px;
+            height: 1000px;
+            border: 2px solid green;
+        }
+
+        .bat {
+            transition: transform .2s ease-out 2s;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 1200px;
+            transition: transform 5s ease-out 2s;
+        }
+
+        .field:hover .ball {
+            transform: translate(5000px, -1000px);
+        }
+
+        .field:hover .bat {
+            transform: rotate(-75deg);
+            transform-origin: top right;
+        }
+
+        .bolar {
+            height: 500px;
+            position: relative;
+            left: 1800px;
+            transition: transform 2s ease-in-out;
+        }
+
+        .field:hover .bolar {
+            transform: rotate(-10deg) translate(50px, 50px)
+        }
+
+        .stamp {
+            height: 500px;
+        }
+
+        .distance-stamp {
+            height: 400px;
+            position: relative;
+            left: 1500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="stamp" src="images/stamp.jpg" alt="">
+        <img class="bat" src="images/cricket8.png" alt="">
+        <img class="distance-stamp" src="images/stamp.jpg" alt="">
+        <img class="bolar" src="images/bolar2.png" alt="">
+        <div class="ball"></div>
+
+    </div>
+</body>
+
+</html>
